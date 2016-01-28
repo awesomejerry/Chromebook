@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html xmlns:spry="http://ns.adobe.com/spry">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<title></title>
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width">
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/flex.css">
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<script src="js/jquery-2.1.3.min.js"></script>
+	<script src="js/jssor.slider.min.js"></script>
+<script src="js/main.js"></script>
+<script src="SpryAssets/xpath.js" type="text/javascript"></script>
+	<script src="SpryAssets/SpryData.js" type="text/javascript"></script>
+	<script type="text/javascript">
+var ds1 = new Spry.Data.XMLDataSet("data.xml", "specials");
+    </script>
+</head>
+
+<body>
+	<div class="flex-column flex-bottom-end container">
+		<div class="flex-1 flex-column browser HIDE">
+			<div class="flex-row bar tab-bar">
+				<div class="flex-row tabs">
+					<div class="flex-center tab selected" for="chrome">
+						<div class="flex-1 flex-start">
+							<img src="image/chrome.png" /><span>全新Chromebook隆重登場</span>
+						</div>
+						<div class="flex-center icon-close"><i class="fa fa-times"></i>
+						</div>
+					</div>
+					<div class="flex-center tab" for="wiki">
+						<div class="flex-1 flex-start">
+							<img src="image/wiki.png" /><span>Chromebook - Wikiwand</span>
+						</div>
+						<div class="flex-center icon-close"><i class="fa fa-times"></i>
+						</div>
+					</div>
+					<div class="flex-center tab" for="acer">
+						<div class="flex-1 flex-start">
+							<img src="image/t.png" /><span>Acer Chromebook 台灣開箱</span>
+						</div>
+						<div class="flex-center icon-close"><i class="fa fa-times"></i>
+						</div>
+					</div>
+				</div>
+				<div class="flex-1 flex-row flex-start">
+					<div class="new-tab"></div>
+				</div>
+				<div class="flex-row win-btns">
+					<div class="flex-center btn win-btn win-btn-mini"><i class="fa fa-minus"></i>
+					</div>
+					<div class="flex-center btn win-btn win-btn-switch"><i class="fa fa-square-o"></i>
+					</div>
+					<div class="flex-center btn win-btn win-btn-close"><i class="fa fa-times"></i>
+					</div>
+				</div>
+			</div>
+			<div class="flex-row flex-center bar tool-bar">
+				<div class="flex-center btn func-btn"><i class="fa fa-arrow-left"></i>
+				</div>
+				<div class="flex-center btn func-btn"><i class="fa fa-arrow-right"></i>
+				</div>
+				<div class="flex-center btn func-btn reload"><i class="fa fa-repeat"></i>
+				</div>
+				<div class="flex-center btn func-btn home"><i class="fa fa-home"></i>
+				</div>
+				<div class="flex-1 flex-row flex-center url-area">
+					<div class="icon info-icon"><i class="fa fa-file-o"></i>
+					</div>
+					<div class="flex-1 url">
+						<input />
+					</div>
+					<div class="icon bookmark-icon"><i class="fa fa-star"></i>
+					</div>
+				</div>
+				<div class="flex-center btn func-btn menu-btn"><i class="fa fa-bars"></i>
+				</div>
+			</div>
+			<div class="flex-row flex-start bar bookmark-bar">
+				<div for="chromebook" class="bookmark">Chromebook</div>
+				<div for="aboutme" class="bookmark">關於我</div>
+				<div for="contactme" class="bookmark">聯絡我</div>
+				<div class="flex-column flex-bottom menu">
+					<ul>
+						<li>
+							<div class="flex-row"><span>隨拿即用</span><div class="flex-1 flex-end"><i class="fa fa-caret-right"></i></div></div>
+							<div class="sub-menu">
+								<ul>
+									<li><span>快速啟動且速度不減</span></li>
+									<li><span>瀏覽速度飛快</span></li>
+								</ul>
+							</div>
+						</li>
+						<li>
+							<div class="flex-row"><span>輕鬆處理生活大小事</span><div class="flex-1 flex-end"><i class="fa fa-caret-right"></i></div></div>
+							<div class="sub-menu">
+								<ul>
+									<li><span>連線</span></li>
+									<li><span>工作</span></li>
+									<li><span>音樂</span></li>
+									<li><span>影片</span></li>
+									<li><span>建立</span></li>
+									<li><span>遊戲</span></li>
+									<li><span>Office檔案</span></li>
+									<li><span>離線</span></li>
+								</ul>
+							</div>
+						</li>
+						<li>
+							<div class="flex-row"><span>輕鬆與他人共用</span><div class="flex-1 flex-end"><i class="fa fa-caret-right"></i></div></div>
+							<div class="sub-menu">
+								<ul>
+									<li><span>訪客模式</span></li>
+									<li><span>受監管的使用者</span></li>
+								</ul>
+							</div>
+						</li>
+						<li>
+							<div class="flex-row"><span>輕鬆搭配其他裝置使用</span><div class="flex-1 flex-end"><i class="fa fa-caret-right"></i></div></div>
+							<div class="sub-menu">
+								<ul>
+									<li><span>手機</span></li>
+									<li><span>印表機</span></li>
+									<li><span>電腦</span></li>
+								</ul>
+							</div>
+						</li>
+						<li>
+							<div class="flex-row"><span>安全無憂</span><div class="flex-1 flex-end"><i class="fa fa-caret-right"></i></div></div>
+							<div class="sub-menu">
+								<ul>
+									<li><span>內建保護功能</span></li>
+									<li><span>保護檔案安全無虞</span></li>
+									<li><span>自動保持最新狀態</span></li>
+								</ul>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="flex-1 flex-row flex-center content">
+				<iframe id="chrome" src="http://www.google.com/chrome/devices/"></iframe>
+				<iframe id="wiki" src="http://www.wikiwand.com/zh-tw/Chromebook"></iframe>
+				<iframe id="acer" src="http://www.techbang.com/posts/21254-acer-chromebook-taiwan-google-chrome-os-out-of-the-box-experience"></iframe>
+				<div id="chromebook">
+					<div id="slider1_container" style="position: relative; top: 0px; left: 0px; width: 400px; height: 200px;">
+						<div u="slides" style="cursor: move; position: absolute; overflow: hidden; left: 0px; top: 0px; width: 800px; height: 500px;">
+							<div><img u="image" src="image/slide/slide1.jpg" /></div>
+							<div><img u="image" src="image/slide/slide2.jpg" /></div>
+							<div><img u="image" src="image/slide/slide3.jpg" /></div>
+							<div><img u="image" src="image/slide/slide4.jpg" /></div>
+							<div><img u="image" src="image/slide/slide5.jpg" /></div>
+						</div>
+					</div>
+					<div class="flex-row flex-center">
+						ACER Chromebook 11.
+						  <div spry:region="ds1">
+						    <table>
+						      <tr>
+						        <th spry:sort="menu_item">Menu_item</th>
+						        <th spry:sort="menu_item/@id">Menu_item/@id</th>
+					          </tr>
+						      <tr spry:repeat="ds1">
+						        <td>{menu_item}</td>
+						        <td>{menu_item/@id}</td>
+					          </tr>
+					        </table>
+				      </div>
+                    </div>
+				</div>
+				<div id="aboutme" class="flex-center flex-row">
+					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3616.3761541481063!2d121.57612810000002!3d24.987331299999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442aa7bee4f2365%3A0xad44153900985602!2zMTE25Y-w5YyX5biC5paH5bGx5Y2A5oyH5Y2X6Lev5LqM5q61NjTomZ_mlL_msrvlpKflrbg!5e0!3m2!1szh-TW!2stw!4v1416075221752" width="600" height="450" frameborder="0" style="border:0"></iframe>
+					<div>
+						<p>Author: <span>沈柏均</span>
+						</p>
+						<p>Email: <a href="mailto:100306004@nccu.edu.tw"><span>100306004@nccu.edu.tw</span></a>
+						</p>
+					</div>
+				</div>
+				<div id="contactme" class="flex-column flex-center">
+					<h1>想對我說話嗎?</h1>
+					<form id="contact" name="contact" method="post" action="">
+						<p class="form-group">
+							<label>姓名</label>
+							<input type="text" />
+						</p>
+						<p class="form-group">
+							<label>電話</label>
+							<input type="number" />
+						</p>
+						<p class="form-group">
+							<label>信箱</label>
+							<input type="email" />
+						</p>
+						<p class="form-group">
+							<label>留言</label>
+							<textarea></textarea>
+						</p>
+						<button>送出</button>
+					</form>
+				</div>
+			</div>
+		</div>
+		<img class="wallpaper SHOW" src="image/bg.jpg">
+		<div class="flex-column desktop">
+			<div class="flex-row flex-startbar app-bar">
+				<img class="chrome-app" src="image/chrome-app.png">
+				<div class="copy flex-1 flex-center">Copyright &copy; Chromebook, all rights reserved.</div>
+				<div id="clock" class="flex-center"></div>
+			</div>
+		</div>
+</div>
+</body>
+
+</html>

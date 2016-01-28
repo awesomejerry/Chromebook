@@ -1,0 +1,281 @@
+html,
+body {
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	margin: 0;
+	padding: 0;
+	border: none;
+	overflow: hidden;
+}
+* {
+	font-family: "微軟正黑體";
+	font-size: 0.8em;
+}
+*:not(input) {
+	cursor: default;
+}
+.btn, .bookmark {
+	cursor: pointer;
+}
+.container {
+	width: 100%;
+	height: 100%;
+}
+.wallpaper {
+	width: 100%;
+	height: 100%;
+	display: block;
+}
+.wallpaper.HIDE {
+	display: none;
+}
+.desktop {
+	width: 100%;
+}
+.desktop.HIDE {
+	display: none;
+}
+.desktop > div {
+	position: relative;
+}
+.desktop .app-bar {
+	color: white;
+	background-color: black;
+}
+.desktop .app-bar img {
+	width: 35px;
+	height: 35px;
+}
+.browser.HIDE {
+	display: none;
+}
+.wallpaper {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	width: 100%;
+	height: 100%;
+}
+.bar,
+.browser,
+.content {
+	width: 100%;
+}
+.tab-bar {
+	height: 25px;
+	background-color: #ffe886;
+}
+.tab {
+	padding: 0 20px;
+	position: relative;
+	width: 180px;
+	height: 25px;
+	display: inline-block;
+	color: inherit;
+	text-decoration: none;
+	margin-right: -7px;
+	z-index: 0;
+}
+.tab span {
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+.tab img {
+	width: 20px;
+	height: 20px;
+}
+.tab::before {
+	border: 28px solid #cbcbcb;
+	content: '';
+	position: absolute;
+	top: -3px;
+	right: 0;
+	bottom: .5em;
+	left: 0;
+	z-index: -2;
+	background: #dedede;
+	border-bottom: none;
+	border-radius: 5px 5px 0 0;
+	box-shadow: 0 2px hsla(0, 0%, 100%, .5) inset;
+	-webkit-transform: perspective(7px) rotateX(2deg);
+	transform: perspective(7px) rotateX(2deg);
+	-webkit-transform-origin: bottom;
+	-ms-transform-origin: bottom;
+	transform-origin: bottom;
+	box-shadow: 0 2px hsla(0, 0%, 100%, .5) inset;
+}
+.tab.selected {
+	z-index: 2;
+}
+.tab.selected::before {
+	z-index: -1;
+	border-color: #efefef;
+}
+.tab .icon-close {
+	width: 25px;
+	height: 25px;
+}
+.new-tab {
+	margin-left: 5px;
+	width: 25px;
+	height: 17px;
+	border-radius: 5px;
+	-webkit-transform: skew(20deg);
+	-moz-transform: skew(20deg);
+	-o-transform: skew(20deg);
+	background: #cbcbcb;
+}
+.btn {
+	display: inline-block;
+	height: 20px;
+	width: 25px;
+}
+.btn.win-btn:hover {
+	color: white;
+	background-color: #3131ff;
+}
+.btn.win-btn.win-btn-close {
+	width: 50px;
+	color: white;
+	background-color: #d80000;
+}
+.btn.win-btn.win-btn-close:hover {
+	background-color: #ea0c0c;
+}
+.new-tab:hover,
+.tab:not(.selected):hover,
+.btn:hover {
+	-webkit-filter: brightness(1.05);
+}
+.tool-bar {
+	height: 35px;
+	background-color: #efefef;
+}
+.tool-bar .btn {
+	margin: 2px;
+	border: 1px solid transparent;
+}
+.tool-bar .func-btn.ACTIVE {
+	background-color: #9a9a9a;
+	border-radius: 3px;
+	border: 1px solid rgba(209, 209, 209, 0.7);
+	box-shadow: 1px 1px 1px 0px rgba(0, 0, 0, 0.75);
+}
+.tool-bar .btn:hover,
+.bookmark-bar .bookmark:hover {
+	border-radius: 3px;
+	border: 1px solid rgba(209, 209, 209, 0.7);
+	box-shadow: 1px 1px 1px 0px rgba(0, 0, 0, 0.75);
+}
+.url-area {
+	height: 25px;
+	background-color: white;
+	box-shadow: inset 1px 1px 1px 1px rgba(20%, 20%, 40%, 0.5);
+}
+.url-area i {
+	margin: 0 5px;
+}
+.url-area input {
+	border: none;
+	width: 100%;
+}
+.url-area input:focus {
+	outline: 0;
+}
+.bookmark-bar {
+	position: relative;
+	height: 30px;
+	background-color: #efefef;
+}
+.bookmark-bar .bookmark {
+	width: 80px;
+	height: 20px;
+	margin: 0 1px;
+	border: 1px solid transparent;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+.bookmark-icon i {
+	color: #fff500;
+}
+.content {
+	position: relative;
+}
+.content > * {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	width: 100%;
+	height: 100%;
+	border: none;
+	padding: 0;
+	margin: 0;
+}
+.app-bar {
+	height: 40px;
+	background-color: black;
+}
+#contact * {
+	width: 100%;
+}
+.bookmark-bar .menu {
+	border: 1px solid #5c5c5c;
+	position: absolute;
+	z-index: 9999;
+	right: 0;
+	top: -5px;
+	background-color: #efefe8;
+	width: 200px;
+	visibility: hidden;
+}
+.bookmark-bar .menu i {
+	margin-right: 10px;
+}
+.bookmark-bar .menu.SHOW, .bookmark-bar .sub-menu.SHOW {
+	visibility: visible;
+}
+.bookmark-bar .menu ul {
+	list-style: none;
+	padding: 0;
+}
+.bookmark-bar .menu li {
+	padding-left: 20px;
+}
+.bookmark-bar span {
+	margin: 15px 5px;
+	display: inline-block;
+}
+.bookmark-bar .sub-menu {
+	border: 1px solid #5c5c5c;
+	position: absolute;
+	z-index: 10000;
+	right: 0;
+	background-color: #efefe8;
+	width: 200px;
+	-webkit-transform: translate3d(-98%, -35px, 0);
+	transform: translate3d(-98%, -35px, 0);
+	visibility: hidden;
+}
+#chromebook img {
+	-webkit-transition: -webkit-transform .5s linear;
+	transition: transform .5s linear;
+}
+#chromebook img:hover {
+	-webkit-transform: scale(1.2);
+	-ms-transform: scale(1.2);
+	transform: scale(1.2);
+}
+#chromebook img:active {
+	-webkit-transform: scale(1.5);
+	-ms-transform: scale(1.5);
+	transform: scale(1.5);
+}
